@@ -1,4 +1,34 @@
 body{
   background-color: #000000;
   color: white;
+  font-family: monospace;
+}
+
+#navwrapper{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+  right: 10%;
+  left: 10%;
+  top: 0px;
+}
+.navitem{
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  border: solid white 1px;
+}
+
+.navitem:hover{
+  border-color: grey;
+  background-color: grey;
+}
+
+.navitem:active{
+  background-color: red;
+  transform: scale(0.7);
 }
