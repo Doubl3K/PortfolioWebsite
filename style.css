@@ -1,34 +1,29 @@
 body{
-  background-color: #000000;
-  color: white;
-  font-family: monospace;
+  background-image: url('Pictures/Wallpaper/pexelsfhd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#navwrapper{
-  position: absolute;
+#taskbar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 162, 237, 0.7);
+  padding-bottom: 1px;
+}
+
+#taskbarIconsWrapper{
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  overflow: hidden;
-  right: 10%;
-  left: 10%;
-  top: 0px;
+  align-items: flex-start;
+  max-width: 30px;
+  max-height: 30px;
 }
-.navitem{
-  flex-grow: 1;
-  text-align: center;
-  cursor: pointer;
-  padding: 10px;
-  margin: 5px;
-  border: solid white 1px;
-}
+.taskbarIcons{
+  padding-left: 5px;
+  padding-right: 5px;
 
-.navitem:hover{
-  border-color: grey;
-  background-color: grey;
 }
-
-.navitem:active{
-  background-color: red;
-  transform: scale(0.7);
-}
+ .taskbarIcons:hover{
+   background-color: rgba(255, 255, 255, 30%);
+ }
