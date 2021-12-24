@@ -7,13 +7,32 @@
   <body>
 
     <div id="taskbar">
+      <div id="taskbarIconsLeftWrapper">
         <img class="taskbarIcons" src="Pictures/Icons/Taskbar/kosTaskIcon.png" alt="">
         <img class="taskbarIcons"src="Pictures/Icons/Taskbar/fileExplorer.png" alt="">
-        <div id="clockwrapper">
+        <img class="taskbarIcons"src="test" alt="alt">
+      </div>
+      <div id="taskbarIconsRightWrapper">
+        <div class="taskbarIcons" id="clockwrapper">
           <span id="clock"></span>
         </div>
+        <span class ="taskbarIcons"id="desktopBar"></span>
       </div>
+    </div>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
+
+<!-- put clockwrapper and desktopBar into own wrapping flexbox so that both
+can be right 0 while still flexing with each other
+Y
+make wallpaper behave like a wallpaper when window is being resized(either zoom or cut)
+
+research how to make movable object for desktop Icons
+
+clock displays wrong time and timezone on laptop
+
+make start menu for os
+
+make openable clock window with attached calendar that displays actual date-->
