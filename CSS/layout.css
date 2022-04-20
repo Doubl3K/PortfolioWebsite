@@ -1,0 +1,132 @@
+body{
+  background-color: black;
+  color: white;
+  margin: 0px;
+}
+
+body::-webkit-scrollbar{
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(71, 71, 71);
+  outline: 1px solid slategrey;
+}
+nav{
+  background-color: rgb(71, 71, 71);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav ul{
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  list-style-type: none;
+}
+nav ul li{
+  float: left;
+  padding: 10px;
+}
+
+.navbwrap{
+  margin-left: auto;
+  margin-right: 10px;
+  align-self: center;
+}
+
+.abcontwrap{
+  display: flex;
+  margin-top: 20vh;
+}
+.ppic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ppic img{
+  max-width: 80%;
+  height: 100%;
+}
+
+.ppic ul{
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  list-style-type: none;
+}
+.ppic ul li{
+  float: left;
+  padding: 10px;
+}
+.abouttext{
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-top: 5%;
+}
+
+
+
+
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+.portwrap{
+  margin-top: 30vh;
+
+}
+
+.gallwrap{
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  margin-bottom: 15vh;
+}
+
+.grid-item{
+  margin: 6vw;
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(11, 11, 11);
+  padding-bottom: 10vh;
+}
+form h1{
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+.formitemwrap{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2vh;
+  margin-left: 5vh;
+}
+
+.formitemwrap input{
+  width: 70vw;
+  border-radius: 10px;
+ }
+
+.formitemwrap input[name="msginput"]{
+  height: 50vh;
+  resize: horizontal;
+ }
+
+.formitemwrap label{
+  margin-bottom: .5vh;
+}
+
+textarea{
+    width: 70vw;
+    border-radius: 10px;
+}
