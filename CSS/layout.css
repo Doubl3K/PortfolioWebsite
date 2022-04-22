@@ -36,6 +36,11 @@ nav ul li{
   align-self: center;
 }
 
+
+
+
+
+
 .abcontwrap{
   display: flex;
   margin-top: 20vh;
@@ -93,6 +98,9 @@ h1{
 }
 
 
+
+
+
 form{
   display: flex;
   flex-direction: column;
@@ -121,6 +129,24 @@ form h1{
   height: 50vh;
   resize: horizontal;
  }
+
+.formitemwrap input[name="submit"]{
+  width: 10vw;
+  border: solid green 2px;
+  color: green;
+}
+
+.formitemwrap input[name="submit"]:hover{
+  background-color: rgb(120, 255, 0);
+}
+
+.formitemwrap input[name="submit"]:active {
+  background-color: green;
+}
+
+.formitemwrap input[name="submit"]:checked {
+  background-color: red;
+}
 
 .formitemwrap label{
   margin-bottom: .5vh;
