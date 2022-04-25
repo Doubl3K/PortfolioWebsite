@@ -198,21 +198,21 @@ form h1{
   resize: horizontal;
  }
 
-.formitemwrap input[name="submit"]{
+.formitemwrap input[type="submit"]{
   width: 10vw;
   border: solid green 2px;
   color: green;
 }
 
-.formitemwrap input[name="submit"]:hover{
+.formitemwrap input[type="submit"]:hover{
   background-color: rgb(120, 255, 0);
 }
 
-.formitemwrap input[name="submit"]:active {
+.formitemwrap input[type="submit"]:active {
   background-color: green;
 }
 
-.formitemwrap input[name="submit"]: {
+.formitemwrap input[type="submit"]: {
   background-color: red;
 }
 
