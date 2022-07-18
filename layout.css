@@ -135,3 +135,27 @@ body{
     grid-template: 1fr 1fr  / 1fr 1fr;
     gap: 5vw;
 }
+
+.portfolio-wrapper{
+    background-color: rgb(230,169,26);
+    display: grid;
+    grid-template: 10vh 1fr 1fr / 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 2vw;
+    padding-bottom: 6vh;
+}
+
+.portfolio-item-wrapper img {
+    width: 30vw;
+    height: 35vh;
+    resize:unset;
+    overflow: hidden;
+}
+
+.portfolio-wrapper h1{
+    grid-area: 1/1/1/4;
+    font-size: 3rem;
+    border-bottom: solid white 3px;
+    border-radius: 3px;
+}
