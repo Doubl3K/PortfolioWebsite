@@ -61,7 +61,7 @@ body{
 
 .hello-content-background img{
     width: 20vw;
-    animation: shove 3s ease-in;
+    animation: shove 2s ease-in;
 }
 
 .abbout-text p{
@@ -71,7 +71,7 @@ body{
 
 @keyframes shove {
     from{
-        margin-left: 30vw;
+        margin-left: 20vw;
     }
     to{
         margin-left: 0vw;
