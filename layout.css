@@ -137,7 +137,7 @@ body{
 }
 
 .portfolio-wrapper{
-    background-color: rgb(230,169,26);
+    background-color: rgb(255, 187, 28);
     display: grid;
     grid-template: 10vh 1fr 1fr / 1fr 1fr 1fr;
     align-items: center;
