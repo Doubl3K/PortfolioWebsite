@@ -124,7 +124,32 @@
         
     </div>
 
-
+    <div class="form-wrapper">
+        <form action="formprocessor.php" method="post">
+            <div class="form-item-wrapper">
+                <h1>Contact</h1>
+            </div>
+            <div class="form-item-wrapper">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder=" Smitty Werbenjagermanjensen">
+            </div>
+            <div class="form-item-wrapper">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder=" smitty.werben@gmail.com">
+            </div>
+            <div class="form-item-wrapper">
+                <label for="company">Company</label>
+                <input type="name" name="company" id="company" placeholder=" Vault Tech Corp.">
+            </div>
+            <div class="form-item-wrapper">
+                <label for="email">Nachricht</label>
+                <textarea name="message" id="message" cols="30" rows=10" placeholder=" Sehr geehrter Herr Kinner"></textarea>
+            </div>
+            <div class="form-item-wrapper">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
 
     <script src="logic.js"></script>
 </body>
