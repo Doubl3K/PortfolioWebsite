@@ -6,7 +6,6 @@ function scrollFunction() {
   } else{
     document.getElementById("header").style.top = "0px";
   }
-  console.log('test');
 }
 
-console.error("Wenn sie schon einmal hier sind können sie auch gerne eine E-Mail an jobs@kevinkinner.de senden.");
+console.error("Wenn sie schon einmal hier sind können sie auch gerne eine E-Mail senden.ʕっ•ᴥ•ʔっ jobs@kevinkinner.de ");
