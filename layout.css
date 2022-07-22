@@ -144,19 +144,15 @@ body{
     grid-template: 10vh 1fr 1fr / 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    gap: 2vw;
+    gap: 1vw;
     padding-bottom: 6vh;
 }
 
 .portfolio-item-wrapper img {
     width: 30vw;
     height: 35vh;
-    border: solid white 3px;
 }
 
-.portfolio-item-wrapper{
-    background-color: white;
-}
 
 .portfolio-item-wrapper label{
     position: relative;
@@ -171,7 +167,7 @@ body{
 }
 
 .portfolio-item-wrapper img:hover{
-    opacity: 70%;
+    filter: brightness(120%);
 }
 
 .portfolio-item-wrapper:hover {
