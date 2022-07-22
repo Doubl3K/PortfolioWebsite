@@ -136,6 +136,8 @@ body{
     gap: 5vw;
 }
 
+/* Portfolio Section */
+
 .portfolio-wrapper{
     background-color: rgb(255, 187, 28);
     display: grid;
@@ -149,8 +151,16 @@ body{
 .portfolio-item-wrapper img {
     width: 30vw;
     height: 35vh;
-    resize:unset;
-    overflow: hidden;
+    border: solid white 3px;
+}
+
+.portfolio-item-wrapper{
+    background-color: white;
+}
+
+.portfolio-item-wrapper label{
+    position: relative;
+    color: red;
 }
 
 .portfolio-wrapper h1{
@@ -159,6 +169,26 @@ body{
     border-bottom: solid white 3px;
     border-radius: 3px;
 }
+
+.portfolio-item-wrapper img:hover{
+    opacity: 70%;
+}
+
+.portfolio-item-wrapper:hover {
+    animation: scale 2s ease forwards;
+
+}
+
+@keyframes scale {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+
+/* Form section */
 
 .form-wrapper{
     background-color: rgb(29, 29, 29);
