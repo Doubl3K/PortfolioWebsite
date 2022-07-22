@@ -61,10 +61,30 @@ body{
 
 .hello-content-background img{
     width: 20vw;
+    animation: shove 3s ease-in;
 }
 
-.hello-content-background p{
+.abbout-text p{
     font-size: 2rem;
+    animation: visible-text 5s ease-in;
+}
+
+@keyframes shove {
+    from{
+        margin-left: 30vw;
+    }
+    to{
+        margin-left: 0vw;
+    }
+}
+
+@keyframes visible-text {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
 }
 
 @keyframes gradient {
