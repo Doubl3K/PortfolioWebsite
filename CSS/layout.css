@@ -61,8 +61,9 @@ body::-webkit-scrollbar-thumb {
 
 .ppic img{
   min-width: 50%;
-  max-width: 70%;
-  height: 100%;
+  max-width: 60%;
+  min-height: 50%;
+  max-height: 80%;
 }
 
 .ppic label{
@@ -191,15 +192,18 @@ form h1{
 .formitemwrap input{
   width: 70vw;
   border-radius: 10px;
- }
+}
 
 .formitemwrap input[name="msginput"]{
   height: 50vh;
   resize: horizontal;
- }
+}
 
 .formitemwrap input[type="submit"]{
+  font-size: 1rem;
+  font-weight: 600;
   width: 10vw;
+  height: 3vh;
   border: solid green 2px;
   color: green;
 }
@@ -210,10 +214,6 @@ form h1{
 
 .formitemwrap input[type="submit"]:active {
   background-color: green;
-}
-
-.formitemwrap input[type="submit"]: {
-  background-color: red;
 }
 
 .formitemwrap label{
