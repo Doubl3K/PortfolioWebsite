@@ -23,9 +23,14 @@ body::-webkit-scrollbar-thumb {
   border: none;
   min-width: 10vw;
   min-height: 3vh;
+  transition-property: background-color;
+  transition-property: color;
+  transition-duration: 2s;
 }
 
-
+#themechanger {
+  color: red;
+}
 
 
 
