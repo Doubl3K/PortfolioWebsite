@@ -14,9 +14,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.navbwrap{
-  margin-left: 80vw;
-
+#themechanger {
+  position: absolute;
+  right: 3vw;
+  top: 1vh;
+  background-color: white;
+  border-radius: 15px;
+  border: none;
+  min-width: 10vw;
+  min-height: 3vh;
 }
 
 
@@ -128,7 +134,7 @@ h1{
 
 .grid-item:hover{
   transform: rotate(1deg);
-
+  border: solid white 5px;
 }
 
 #porthidden{
