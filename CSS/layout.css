@@ -38,12 +38,11 @@ body::-webkit-scrollbar-thumb {
 
 .abcontwrap{
   display: flex;
+  font-size: 1.3rem;
   margin-top: 15vh;
+  margin-left: 5vw;
 }
 
-.abcontwrap{
-  font-size: 1.3rem;
-}
 .abcontwrap h1{
   font-size: 4rem;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -72,10 +71,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .ppic img{
-  min-width: 50%;
-  max-width: 60%;
-  min-height: 50%;
-  max-height: 80%;
+  margin-top: 40px;
+  width: 90%;
+  height: auto;
+  border: solid white 2px;
 }
 
 .ppic label{
