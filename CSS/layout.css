@@ -50,30 +50,9 @@ body::-webkit-scrollbar-thumb {
   white-space: nowrap;
   animation:
   typing 6s steps(100, end) infinite alternate,
-  blink-caret 2s infinite  ;
+  blink-caret 2s infinite;
 }
 
-/* The typing effect */
-@keyframes typing {
-  0%{
-    width: 0%;
-  }
-  5%{
-    width: 0%;
-  }
-  30%{
-    width: 100%;
-  }
-  100%{
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
 .ppic{
   display: flex;
   flex-direction: column;
@@ -85,12 +64,15 @@ body::-webkit-scrollbar-thumb {
   width: 90%;
   height: auto;
   border: solid white 2px;
+  z-index: 0;
 }
 
 .ppic label{
   margin-top: 1vh;
   font-size: 1.5rem;
+  animation: slideintop 1s forwards;
 }
+
 .ppic ul{
   margin: 0px;
   padding: 0px;
@@ -100,6 +82,17 @@ body::-webkit-scrollbar-thumb {
 .ppic ul li{
   float: left;
   padding: 10px;
+}
+
+.ppic ul #li1{
+  animation: slideintop .5s forwards;
+}
+
+.ppic ul #li2 {
+  animation: slideintop 1s forwards;
+}
+.ppic ul #li3 {
+  animation: slideintop 1.5s forwards;
 }
 .ppic ul li :hover{
   background-color: rgba(189, 189, 189, 0.44);
@@ -251,5 +244,47 @@ textarea{
 @media only screen and (max-width: 1750px) {
   .abcontwrap h1{
     font-size: 2rem;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+
+  5% {
+    width: 0%;
+  }
+
+  30% {
+    width: 100%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes slideintop {
+  0% {
+    margin-top: -50%;
+  }
+
+  100% {
+    margin-top: 0;
   }
 }
