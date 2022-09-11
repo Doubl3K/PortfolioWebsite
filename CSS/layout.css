@@ -97,6 +97,7 @@ body::-webkit-scrollbar-thumb {
 .ppic ul li :hover{
   background-color: rgba(189, 189, 189, 0.44);
 }
+
 .abouttext{
   margin-right: 10%;
   margin-left: 10%;
@@ -104,13 +105,26 @@ body::-webkit-scrollbar-thumb {
   min-width: 20%;
 }
 
-
-
-
-
 h1{
   display: flex;
   justify-content: center;
+}
+
+.abouttext #p1{
+  opacity: 0%;
+  animation: appear 2s 2s forwards ;
+}
+#p2 {
+  opacity: 0%;
+  animation: appear 1s 5s forwards;
+}
+#p3 {
+  opacity: 0%;
+  animation: appear 1s 7s forwards;
+}
+#p4 {
+  opacity: 0%;
+  animation: appear 1s 10s forwards;
 }
 .portwrap{
   margin-top: 30vh;
@@ -286,5 +300,14 @@ textarea{
 
   100% {
     margin-top: 0;
+  }
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
   }
 }
