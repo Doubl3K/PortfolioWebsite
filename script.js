@@ -7,7 +7,7 @@ let body = document.getElementsByTagName("body");
 themeButton.addEventListener("click", () => {
     
     if (darkmodeActive == true) {
-        body[0].style.background = "hsl(150, 14%, 84%)";
+        body[0].style.background = "linear-gradient(216deg, #e3e3e3, #a4a4a4)";
         body[0].style.color = "black";
         themeButton.style.background = "url(../Pictures/buttons/sunset.svg) no-repeat 90% 45%";
         themeButton.style.backgroundColor = "black";
@@ -18,7 +18,7 @@ themeButton.addEventListener("click", () => {
     }
     
     else if (darkmodeActive == false) {
-        body[0].style.background = "black"
+        body[0].style.background = "linear-gradient(216deg, #000000, #242424)"
         body[0].style.color = "white";
         themeButton.style.background = "url(../Pictures/buttons/sunrise.svg) no-repeat 90% 45%";
         themeButton.style.backgroundColor = "white";
@@ -41,10 +41,10 @@ function waveAnimation(darkmodeActive) {
     waveForm.style.boxSizing = "border-box";
     waveForm.style.overflow = "hidden";
     if (darkmodeActive == true) {
-        waveForm.style.background = "black";
+        waveForm.style.background = "linear-gradient(216deg, #000000, #242424)";
     }
     else if(darkmodeActive == false){
-        waveForm.style.background = "hsl(150, 14%, 84%)";
+        waveForm.style.background = "linear-gradient(216deg, #e3e3e3, #a4a4a4)";
     }
 
     body[0].appendChild(waveForm);
