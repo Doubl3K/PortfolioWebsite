@@ -1,3 +1,4 @@
+// Themechanger
 let darkmodeActive = true;
 let themeButton = document.getElementById("themechanger");
 let themeButtonCircle = document.getElementById("themechangercircle");
@@ -25,3 +26,28 @@ themeButton.addEventListener("click", () => {
     }
 });
 
+//Periodic Headline Changer
+let abttxtc = document.getElementsByClassName("abouttext");
+let abttxt = abttxtc[0];
+let abttxtheader = abttxt.childNodes[1];
+let interval = setInterval(headerChanger, 12000);
+let tup = 0;
+function headerChanger(){
+        switch (tup) {
+            case 0:
+                abttxtheader.textContent = "Computer Guy"
+                break;
+            case 1:
+                abttxtheader.textContent = "Programmer"
+                break;
+            case 2:
+                abttxtheader.textContent = "Webdeveloper Frontend"
+                tup = -1;
+            break;
+        
+            default:
+                tup = -1;
+                break;
+            }
+    tup++;
+}
