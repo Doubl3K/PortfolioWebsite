@@ -214,10 +214,13 @@ form h1{
   align-items: flex-start;
   margin-bottom: 2vh;
   margin-left: 5vh;
+  font-size: 1.5rem;
 }
 
 .formitemwrap input{
   width: 70vw;
+  height: 1.5rem;
+  margin-bottom: 2vh;
   border-radius: 10px;
 }
 
@@ -233,6 +236,7 @@ form h1{
   height: 3vh;
   border: solid green 2px;
   color: green;
+  margin-top: 10vh;
 }
 
 .formitemwrap input[type="submit"]:hover{
