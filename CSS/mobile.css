@@ -80,13 +80,30 @@
         transform: rotate(0deg);
     }
 
+    .formitemwrap {
+        margin-left: 0;
+    }
+
+    .formitemwrap input:not([type="submit"]){
+        font-size: 2rem;
+        height: 3vh;
+    }
+    .formitemwrap label{
+        font-size: 2rem;
+    }
+    textarea{
+        font-size: 1.5rem
+    }
+    .formitemwrap input[type="submit"]{
+        font-size: 3rem;
+        width: 30vw;
+        height: 8vh;
+    }
 
 
 
 
 
-
-    
     @keyframes slideinleft {
         0% {
             margin-left: -500%;
