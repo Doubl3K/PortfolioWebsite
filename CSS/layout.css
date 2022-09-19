@@ -4,27 +4,47 @@ body{
   margin: 0px;
 }
 
-body::-webkit-scrollbar{
-  background-color: black;
+#settingswrapper{
+  position: fixed;
+  right: 1vw;
+  top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(71, 71, 71);
-  outline: 1px solid slategrey;
+#settingscog :hover{
+  opacity: 80%;
 }
 
+#settingscog :active{
+  transform: rotate(180deg);
+  transition: .3s;
+}
 
+.settingsmenu{
+  width: 170px;
+  height: 5vh;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#menuwrapper{
+  background: rgb(153, 153, 153);
+  flex-direction: column;
+  margin-top: 1vh;
+  border-radius: 15px;
+  padding: 10px;
+  justify-content: space-around;
+  display: none;
+}
 #themechanger {
-  position: absolute;
-  right: 3vw;
-  top: 1vh;
+  margin-top: 2vh;
   background: url(../Pictures/buttons/sunrise.svg) no-repeat;
   background-position: 90% 45%;
-  background-color: white;
+  background-color:white;
   border: none;
-  border-radius: 15px;
-  width: 170px;
-  height: 3vh;
   transition-property: background;
   transition-property: color;
   transition-duration: 2s;
@@ -32,7 +52,6 @@ body::-webkit-scrollbar-thumb {
 
 #themechanger:hover {
   opacity: 80%;
-  cursor: pointer;
 }
 
 

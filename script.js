@@ -1,3 +1,5 @@
+
+
 // Themechanger
 let darkmodeActive = true;
 let themeButton = document.getElementById("themechanger");
@@ -62,8 +64,6 @@ function waveAnimation(darkmodeActive) {
                 waveForm.style.top = pos + "vh";
                 let height = 300 - pos;
                 waveForm.style.height = height + "vw";
-                console.log(height);
-
             }
         }
     })();
@@ -94,3 +94,18 @@ function headerChanger(){
             }
     tup++;
 }
+
+//User settings
+let menuVisible = false;
+let settingsmenu = document.getElementById("menuwrapper");
+let cogbutton = document.getElementById("settingscog");
+cogbutton.addEventListener("click", () => {
+    if (menuVisible == false) {
+        settingsmenu.style.display = "flex";
+        menuVisible = true;
+    }
+    else{
+        settingsmenu.style.display = "none";
+        menuVisible = false;
+    }
+})
