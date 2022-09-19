@@ -1,0 +1,67 @@
+/* TODO: When done set max width to 768 */
+@media only screen and (max-width: 1080px) {
+    .abcontwrap{
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .ppic{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+    .ppic ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 2vh;
+    }
+    .ppic label{
+        display: none;
+    }
+    .ppic img{
+        max-width: 30vw;
+        align-self: center;
+        justify-self: center;
+        margin-left: 5vh;
+    }
+
+
+    .abouttext h1{
+        font-size: 3.5rem;
+        margin-top: 3vh;
+        margin-bottom: 8vh;
+    }
+
+    .abouttext p{
+        font-size: 1.5em;
+    }
+
+        .ppic ul #li1 {
+            animation: none;
+            animation: slideinleft 1s forwards;
+
+        }
+    
+        .ppic ul #li2 {
+            animation: none;
+            animation: slideinleft 2s forwards;
+        }
+    
+        .ppic ul #li3 {
+            animation: none;
+            animation: slideinleft 3s forwards;
+        }
+
+
+@keyframes slideinleft {
+    0% {
+        margin-left: -500%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+}
