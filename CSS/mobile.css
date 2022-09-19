@@ -1,5 +1,10 @@
 /* TODO: When done set max width to 768 */
 @media only screen and (max-width: 1080px) {
+    h1 {
+            font-size: 3.5rem;
+            margin-top: 3vh;
+            margin-bottom: 8vh;
+        }
     .abcontwrap{
         margin-top: 10vh;
         display: flex;
@@ -37,31 +42,58 @@
         font-size: 1.5em;
     }
 
-        .ppic ul #li1 {
-            animation: none;
-            animation: slideinleft 1s forwards;
-
-        }
-    
-        .ppic ul #li2 {
-            animation: none;
-            animation: slideinleft 2s forwards;
-        }
-    
-        .ppic ul #li3 {
-            animation: none;
-            animation: slideinleft 3s forwards;
-        }
-
-
-@keyframes slideinleft {
-    0% {
-        margin-left: -500%;
+    .ppic ul #li1 {
+        animation: none;
+        animation: slideinleft 1s forwards;
     }
 
-    100% {
-        margin-left: 0;
+    .ppic ul #li2 {
+        animation: none;
+        animation: slideinleft 2s forwards;
     }
-}
 
+    .ppic ul #li3 {
+        animation: none;
+        animation: slideinleft 3s forwards;
+    }
+
+    .gallwrap{
+        margin-top: 0vh;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1vw;
+        justify-items: center;
+    }
+    .gallwrap div{
+        border-radius: 15px;
+        width: fit-content;
+    }
+    .grid-item{
+        padding: 10vw;
+    }
+    .grid-item #porthidden {
+        display: block;
+        margin-top: -5vh;
+        background-color: rgba(255, 255, 255, 0.95);
+        font-size: 1.5em;
+    }
+    .grid-item :hover {
+        transform: rotate(0deg);
+    }
+
+
+
+
+
+
+
+    
+    @keyframes slideinleft {
+        0% {
+            margin-left: -500%;
+        }
+
+        100% {
+            margin-left: 0;
+        }
+    }
 }
