@@ -125,16 +125,16 @@
             <input type="text" name="name" placeholder="John Smith">
         </div>
         <div class="formitemwrap">
-            <label for="email">Mail</label>
-            <input type="mail" name="email" placeholder="john.smith@gmail.com">
+            <label for="email">Mail*</label>
+            <input type="mail" name="email" placeholder="john.smith@gmail.com" pattern="(.+@+.+[.]+.*)" required>
         </div>
         <div class="formitemwrap">
             <label for="company">Company</label>
             <input type="name" name="company" placeholder="Vault-Tec Corporation">
         </div>
         <div class="formitemwrap">
-            <label for="msginput">Message</label>
-            <textarea name="message" rows="8" cols="80" placeholder="Wenn sie das Kontaktformular lieber nicht nutzen würden können sie mir auch einfach eine E-Mail senden, an:  jobs@kevinkinner.de"></textarea>
+            <label for="msginput">Message*</label>
+            <textarea name="message" rows="8" cols="80" placeholder="Wenn sie das Kontaktformular lieber nicht nutzen würden können sie mir auch einfach eine E-Mail senden, an:  jobs@kevinkinner.de" required></textarea>
         </div>
         <div class="formitemwrap">
             <input type="submit" name="" value="Submit">
