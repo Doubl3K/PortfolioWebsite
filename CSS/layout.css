@@ -178,7 +178,7 @@ h1{
   border: solid white 5px;
 }
 
-#porthidden{
+.porthidden{
   transition: 2s;
   display: none;
   color: black;
@@ -186,7 +186,7 @@ h1{
   padding: 0;
 }
 
-.grid-item:hover #porthidden{
+.grid-item:hover .porthidden{
   display: block;
   background-color: rgba(255, 255, 255, 0.95);
 

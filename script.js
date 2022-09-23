@@ -1,5 +1,3 @@
-
-
 // Themechanger
 let darkmodeActive = true;
 let themeButton = document.getElementById("themechanger");
@@ -108,4 +106,79 @@ cogbutton.addEventListener("click", () => {
         settingsmenu.style.display = "none";
         menuVisible = false;
     }
-})
+});
+
+const userLanguage = (() => {
+    let browserLanguage = navigator.language
+    let langButton = document.getElementById("languagechanger");
+    let porth = document.getElementsByClassName("porthidden");
+    if (browserLanguage.slice(0,2) == "en") {
+        //Text Box at start of Page
+        let userNotif = document.createElement("div");
+        userNotif.style.background = "grey";
+        userNotif.style.padding = "20px";
+        userNotif.style.borderRadius = "150px";
+        userNotif.style.textAlign = "center";
+        userNotif.style.position = "absolute";
+        userNotif.style.top = "10vh";
+        userNotif.style.left  = "0";
+        userNotif.style.right = "0";
+        userNotif.style.width = "600px";
+        userNotif.style.marginLeft = "auto";
+        userNotif.style.marginRight = "auto";
+        userNotif.style.fontSize = "1.3rem";
+        userNotif.textContent = "Language set to english due to browser preferences. You can change this to German in the top right settings."
+        body[0].appendChild(userNotif);
+        //Site wide text change
+        document.getElementById("p1").textContent = "Welcome on my Portfolio Page.";
+        document.getElementById("p2").textContent = "Here you can find a collection of a couple of Projects I have worked on.";
+        document.getElementById("p3").textContent = "You already got experience working with a CLI? Try out my web based version to get some more information about me.";
+        document.getElementById("p4").textContent = "Interested in collaborating? Maybe you would like additional information about me? Don't hesitate to contact me, either at jobs@kevinkinner.de or via the form below";
+        porth[0].textContent = "Browserbased Calculator";
+        porth[1].textContent = "Rock Paper Scissor";
+        porth[2].textContent = "Singupform for public speakers";
+        porth[3].textContent = "Sign in mockup for a Forum";
+        porth[4].textContent = "Local Library";
+        porth[5].textContent = "Etch-a-Sketch";
+        langButton.textContent = "German";
+        setTimeout(() => {
+            userNotif.style.display = "none";
+        }, 10000);
+    }
+    else{
+        langButton.textContent = "English";
+    }
+    langButton.addEventListener("click", () =>{
+        if (browserLanguage.slice(0,2) == "de"){
+            langButton.textContent = "German";
+            browserLanguage = "en";
+            document.getElementById("p1").textContent = "Welcome on my Portfolio Page.";
+            document.getElementById("p2").textContent = "Here you can find a collection of a couple of Projects I have worked on.";
+            document.getElementById("p3").textContent = "You already got experience working with a CLI? Try out my web based version to get some more information about me.";
+            document.getElementById("p4").textContent = "Interested in collaborating? Maybe you would like additional information about me? Don't hesitate to contact me,either at jobs@kevinkinner.de or via the form below";
+            porth[0].textContent = "Browserbased Calculator";
+            porth[1].textContent = "Rock Paper Scissor";
+            porth[2].textContent = "Singupform for public speakers";
+            porth[3].textContent = "Sign in mockup for a Forum";
+            porth[4].textContent = "Local Library";
+            porth[5].textContent = "Etch-a-Sketch";
+
+
+
+
+        }else{
+            langButton.textContent = "English";
+            browserLanguage = "de";
+            document.getElementById("p1").textContent = "Willkommen auf meiner persönlichen Website.";
+            document.getElementById("p2").textContent = "Hier können Sie eine kleine Sammlung an Projekten finden an denen ich bereits gearbeitet habe.";
+            document.getElementById("p3").textContent = "Sie haben bereits Erfahrung im Umgang mit einer CLI? Nutzen sie doch meine webbassierte Version um mehr Information über mich zu erhalten.";
+            document.getElementById("p4").textContent = "Falls sie an einer Zusammearbeit interessiert sind oder gerne weitere Informationen zu meiner Person hätten kontaktieren sie mich. Senden sie entweder eine E-Mail an jobs@kevinkinner.de oder nutzen sie das Kontaktformular unten.";
+            porth[0].textContent = "Ein simpler browserbasierter Tashenrechner.";
+            porth[1].textContent = "Schere Stein Papier";
+            porth[2].textContent = "Meldeformular für Messeredner";
+            porth[3].textContent = "Anmeldeformular für ein Onlineforum";
+            porth[4].textContent = "Lokale Bibliothek für gelesene Bücher";
+            porth[5].textContent = "Etch-a-Sketch";
+        }
+    });
+})();
