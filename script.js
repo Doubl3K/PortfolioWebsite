@@ -182,3 +182,52 @@ const userLanguage = (() => {
         }
     });
 })();
+
+document.getElementById("submitbutton").addEventListener("click", () =>{
+    let name = document.getElementsByName("name")[0].value;
+    let mail = document.getElementsByName("email")[0].value;
+    let comp = document.getElementsByName("company")[0].value;
+    let umsg = document.getElementsByName("message")[0].textContent;
+
+    let answer = document.createElement("div");
+    answer.style.position = "fixed";
+    answer.style.width = "30vw";
+    answer.style.left = "0";
+    answer.style.right = "0";
+    answer.style.marginLeft = "auto";
+    answer.style.marginRight = "auto";
+    answer.style.padding = "10px";
+    answer.style.top = "50vh";
+    answer.style.borderRadius = "15px";
+    answer.style.boxShadow = "3px 5px #4EC5F1"
+    answer.style.background = "#eee";
+    answer.style.color = "black";
+    answer.style.fontSize = "2rem";
+
+    console.table({name,mail,comp,umsg});
+    $.ajax({
+    method: "POST",
+    url: 'formprocessor.php',
+    data: { name:name, mail:mail, comp:comp, umsg:umsg},
+    success: function(response){
+        answer.textContent = response;
+    },
+    error: function(xhr, status, error){
+        answer.textContent = response;
+    }
+});
+    body[0].appendChild(answer);
+    setTimeout(() => {
+            answer.style.display = "none";
+    }, 15000);
+});
+
+
+
+
+
+
+
+
+
+
